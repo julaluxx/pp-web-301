@@ -26,6 +26,8 @@ body {
     flex-direction: row;
     padding: 10px;
     text-decoration: none;
+    min-width: 300px;
+    justify-content: center;
 }
 
 #ikpwh {
@@ -33,7 +35,7 @@ body {
 }
 
 .marquee {
-    background-color: #dfb1b6;
+    background-color: #101e42;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -73,7 +75,7 @@ body {
 }
 
 .footer {
-    background-color: #dfb1b6;
+    background-color: #101e42;
     display: flex;
     padding: 10px;
     width: 100%;
@@ -164,6 +166,7 @@ body {
     color: #a6427c;
     font-weight: 700;
     font-size: 30px;
+    flex-grow: 1;
 }
 
 #ixj8l-3 {
@@ -182,6 +185,8 @@ body {
 
 #ilmd5 {
     color: #f5eae3;
+    font-weight: 600;
+    transition: transform 10s linear;
 }
 
 .news-menu.active-page {
@@ -211,6 +216,7 @@ body {
 
 .svg-pp-logo {
     display: flex;
+    flex-grow: 1;
 }
 
 #iahu12-2 {
@@ -310,6 +316,7 @@ body {
     display: flex;
     column-gap: 10px;
     padding: 10px;
+    background-color: #a6427c;
 }
 
 #iqm81j-2 {
@@ -372,6 +379,15 @@ body {
     display: flex;
     flex-direction: column;
     column-gap: 10px;
+}
+
+.card-title {
+    color: #f5eae3;
+    font-weight: 600;
+}
+
+.card-desc {
+    color: #dfb1b6;
 }
 
 #iitume-2-2 {
