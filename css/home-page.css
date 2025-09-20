@@ -158,7 +158,7 @@ body {
 .main {
     display: block;
     width: 100%;
-    padding: 30px;
+    padding: 0px 0px 0px 0px;
 }
 
 .website-name {
@@ -210,10 +210,83 @@ body {
     background-color: #a6427c;
 }
 
-#ipvvsr {
+.svg-pp-logo {
+    display: flex;
+}
+
+#iahu12-2 {
     min-height: 100px;
 }
 
-.svg-pp-logo {
+.carousel {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    overflow: hidden hidden;
+}
+
+#iahu12-2 {
+    min-height: 100px;
+}
+
+.feature {
+    min-height: 400px;
+}
+
+#i09p8l {
+    min-height: 100px;
+}
+
+.carousel-control {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    padding: 30px;
+}
+
+#iay1qb {
+    min-height: 100px;
+}
+
+#i3wee1 {
+    min-height: 100px;
+}
+
+.left-arrow {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-arrow {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ik4kri {
+    cursor: pointer;
+}
+
+#ih8h4q {
+    cursor: pointer;
+}
+
+#id7fcl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#is0ydi {
+    color: black;
+    width: 100%;
 }
