@@ -21,13 +21,10 @@ body {
 
 .logo {
     column-gap: 5px;
-    align-content: center;
     display: flex;
-    flex-direction: row;
     padding: 10px;
     text-decoration: none;
-    min-width: 300px;
-    justify-content: center;
+    align-items: center;
 }
 
 .marquee {
@@ -106,18 +103,20 @@ body {
 .navbar {
     justify-content: space-between;
     padding: 10px;
+    display: flex;
+    column-gap: 10px;
 }
 
 .main {
     display: block;
     width: 100%;
+    min-height: 100px;
 }
 
 .website-name {
     color: #a6427c;
     font-weight: 700;
-    font-size: 30px;
-    flex-grow: 1;
+    font-size: 3vh;
 }
 
 #i1qxg-2-2-2 {
@@ -214,5 +213,109 @@ body {
 
 .svg-pp-logo {
     display: flex;
-    flex-grow: 1;
+}
+
+#iiz8h7 {
+    min-height: 100px;
+}
+
+#ilzd7i-2 {
+    width: 20%;
+    height: 40px;
+    border-radius: 8px 8px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cate-bar {
+    min-height: 50px;
+    width: 80%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-section {
+    padding: 0px 20px 20px 20px;
+}
+
+#if7c27 {
+    min-height: 100px;
+}
+
+.content-book {
+    border-radius: 8px;
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 0 5px 0 black;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+#irgk6z-2 {
+    padding: 10px;
+}
+
+#ilzd7i-2-2 {
+    width: 20%;
+    height: 40px;
+    border-radius: 8px 8px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cate-text {
+    padding: 10px 10px 10px;
+    font-size: 1.5rem;
+    color: #f5eae3;
+}
+
+.b-p-gradient {
+    background-repeat: repeat;
+    background-position: left top;
+    background-attachment: scroll;
+    background-size: auto;
+    background-image: linear-gradient(to right, #22209f 0%, #b13d97 100%);
+}
+
+#ifjiun {
+    min-height: 100px;
+}
+
+#iabq84 {
+    min-height: 100px;
+}
+
+#i7o6yg {
+    color: black;
+}
+
+.content-image {
+    object-fit: contain;
+    border-radius: 4px;
+    max-width: 240px;
+}
+
+.content-page {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.content-text {
+    width: 100%;
+    position: relative;
+    text-align: left;
+    color: #554d50;
 }
