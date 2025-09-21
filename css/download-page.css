@@ -1,281 +1,147 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5eae3;
 }
 
 .header {
     display: flex;
-    width: 100%;
-    position: sticky;
-    box-shadow: 0 0 5px 0 black;
-    column-count: 3;
-    padding: 10px;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
     background-color: #f5eae3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    column-gap: 5px;
     display: flex;
-    padding: 10px;
+    align-items: center;
     text-decoration: none;
-    align-items: center;
+    color: #a6427c;
 }
 
-.marquee {
-    background-color: #101e42;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.website-logo {
+    height: 30px;
+    margin-right: 0.5rem;
 }
 
-.footer {
-    background-color: #101e42;
+.website-name {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar {
     display: flex;
-    padding: 10px;
-    width: 100%;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
+    gap: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #a6427c;
+    padding: 0.5rem 1rem;
+    border: 2px solid #a6427c;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #a6427c;
+    color: #f5eae3;
 }
 
 .search-field {
     display: flex;
-    column-gap: 10px;
-    padding: 10px;
-}
-
-.search-button {
-    border-top: 2px solid;
-    border: 2px solid #a6427c;
-    border-radius: 4px 4px 4px 4px;
-    background-color: rgba(0, 0, 0, 0);
-    color: #a6427c;
-    padding: 5px 10px 10px 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    gap: 0.5rem;
 }
 
 .search-input {
     border: 2px solid #a6427c;
     border-radius: 4px;
+    padding: 0.5rem;
 }
 
-.news-menu {
-    text-decoration: none #251919;
-    outline: #ffffff;
-    border-radius: 4px;
+.search-button {
+    background-color: transparent;
     border: 2px solid #a6427c;
     color: #a6427c;
-}
-
-.download-menu {
-    color: #a6427c;
     border-radius: 4px;
-    border: 2px solid #a6427c;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 
-.about-menu {
-    color: #a6427c;
-    border: 2px solid #a6427c;
-    border-radius: 4px;
+.marquee {
+    background-color: #101e42;
+    color: #f5eae3;
+    text-align: center;
+    padding: 0.5rem;
 }
 
-.guide-menu {
-    color: #a6427c;
-    border: 2px solid #a6427c;
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0);
+.main-content {
+    padding: 2rem;
 }
 
-.contact-menu {
-    color: #a6427c;
-    border: 2px solid #a6427c;
-    border-radius: 4px;
-}
-
-.navbar {
-    justify-content: space-between;
-    padding: 10px;
+.filter-container {
     display: flex;
-    column-gap: 10px;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 
-.main {
-    display: block;
-    width: 100%;
-    min-height: 100px;
-}
-
-.website-name {
-    color: #a6427c;
-    font-weight: 700;
-    font-size: 3vh;
-}
-
-#i1qxg-2-2 {
-    color: black;
+.filter-bar {
+    width: 50%;
     height: 30px;
-    display: none;
-}
-
-#i3qaf-2-2 {
-    display: flex;
-    align-items: center;
-}
-
-#i8559-2-2 {
-    padding: 5px;
-    text-decoration: none;
-}
-
-#ih45p-2-2 {
-    padding: 5px;
-    text-decoration: none;
-}
-
-#ipeob-2-2 {
-    padding: 5px;
-    text-decoration: none;
-}
-
-#ieziv-2-2 {
-    padding: 5px;
-    text-decoration: none;
-}
-
-#ixj8l-4-2 {
-    padding: 5px;
-    text-decoration: none;
-}
-
-#ievoe-2-2 {
-    display: flex;
-    column-gap: 10px;
-}
-
-#iw4nx-2-2 {
-    display: flex;
-}
-
-#ixj8l-3-2-2 {
-    padding: 5px;
-    text-decoration: none;
-}
-
-#ixj8l-3-2-2 {
-    padding: 5px;
-    text-decoration: none;
-}
-
-#ikpwh-2-2 {
-    min-height: 100px;
-}
-
-#ii3hpp {
-    color: #f5eae3;
-}
-
-#ijexw-2-2 {
-    color: #f5eae3;
-}
-
-.news-menu.active-page {
-    color: #f5eae3;
-    background-color: #a6427c;
-}
-
-.download-menu.active-page {
-    background-color: #a6427c;
-    color: #f5eae3;
-}
-
-.about-menu.active-page {
-    color: #f5eae3;
-    background-color: #a6427c;
-}
-
-.guide-menu.active-page {
-    color: #f5eae3;
-    background-color: #a6427c;
-}
-
-.contact-menu.active-page {
-    color: #f5eae3;
-    background-color: #a6427c;
-}
-
-.svg-pp-logo {
-    display: flex;
-}
-
-.filtering {
-    padding: 20px;
-    display: flex;
-}
-
-.filter {
     background-color: #c6c6c6;
-    height: 30px;
-    width: 50%;
     border-radius: 4px;
 }
 
-.docs-item {
-    background-color: #234272;
-    position: relative;
-    border-radius: 4px;
+.download-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.download-item {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    align-content: center;
-    padding: 10px;
-    min-height: 50px;
-    width: 100%;
-}
-
-.docs-download-button {
-    background-color: rgba(0, 0, 0, 0);
+    align-items: center;
+    padding: 1rem;
+    background-color: #a6427c;
     border-radius: 4px;
-    border: 2px solid #cd899e;
-    color: #cd899e;
-}
-
-.docs-item-text {
     color: #f5eae3;
 }
 
-.grid-row {
-    display: flex;
-    width: 100%;
-    flex-wrap: nowrap;
-    column-gap: 10px;
-    align-items: center;
-    justify-content: center;
+.download-text {
+    margin: 0;
 }
 
-.grid-col {
-    display: flex;
-    width: 50%;
-    margin: 0px 0px 10px 0px;
-    flex-direction: column;
-    column-gap: 10px;
+.download-button {
+    background-color: #f5eae3;
+    color: #a6427c;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.grid {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.footer {
+    background-color: #101e42;
+    color: #f5eae3;
+    text-align: center;
+    padding: 1rem;
 }
 
-.container {
-    padding: 10px;
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .download-grid {
+        grid-template-columns: 1fr;
+    }
 }
