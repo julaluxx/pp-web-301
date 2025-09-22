@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>วังชมพู | Pink Palace</title>
   <link rel="stylesheet" href="/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
 </head>
@@ -26,7 +28,7 @@
     <div class="search-field">
       <input type="text" placeholder="Search" class="search-input">
       <button class="search-button">Search</button>
-  </div>
+    </div>
   </header>
 
   <section class="marquee">
@@ -34,58 +36,82 @@
   </section>
 
   <main class="main">
-    <section class="carousel">
-      <div class="carousel-images">
-        <img src="/assets/banner.svg" alt="Banner" class="carousel-img" />
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-control">
-        <button class="carousel-arrow left-arrow" aria-label="Previous">
-          <!-- Left Arrow SVG -->
-          <svg height="30" viewBox="0 0 115.297 200">
-            <path
-              d="M89.7351 4.38566L5.03169 89.0891C4.97791 89.1429 4.92454 89.1971 4.87158 89.2517C4.81861 89.3063 4.76607 89.3613 4.71397 89.4167C4.65845 89.4689 4.60334 89.5216 4.5486 89.5747C4.49385 89.6278 4.43952 89.6813 4.3856 89.7352C1.46185 92.6589 0 96.1883 0 100.323C0 104.458 1.46185 107.987 4.3856 110.911L89.0889 195.614C92.0127 198.538 95.542 200 99.6768 200C103.812 200 107.341 198.538 110.265 195.614C113.189 192.691 114.65 189.161 114.65 185.026C114.65 180.892 113.189 177.362 110.265 174.438L36.1494 100.323L110.911 25.5615C112.315 24.1575 113.397 22.5382 114.157 20.7037C114.917 18.8693 115.297 16.9592 115.297 14.9736C115.297 12.988 114.917 11.0779 114.157 9.24345C113.397 7.40897 112.315 5.7897 110.911 4.38566C107.987 1.46189 104.458 0 100.323 0C96.1883 0 92.6589 1.46189 89.7351 4.38566Z"
-              fill="#000" />
-          </svg>
-        </button>
-        <button class="carousel-arrow right-arrow" aria-label="Next">
-          <!-- Right Arrow SVG -->
-          <svg height="30" viewBox="0 0 115.297 200">
-            <path
-              d="M110.265 89.0891L25.5616 4.38566C22.6378 1.46189 19.1085 0 14.9736 0C10.8388 0 7.30945 1.46189 4.3857 4.38566C2.98165 5.7897 1.89967 7.40897 1.13979 9.24345C0.379915 11.0779 0 12.988 0 14.9736C0 16.9592 0.379915 18.8693 1.13979 20.7037C1.89967 22.5382 2.98165 24.1575 4.3857 25.5615L79.1473 100.323L5.03197 174.438C2.10818 177.362 0.646276 180.892 0.646276 185.026C0.646276 189.161 2.10818 192.691 5.03197 195.614C7.95573 198.538 11.485 200 15.6199 200C19.7547 200 23.2841 198.538 26.2079 195.614L110.911 110.911C113.835 107.987 115.297 104.458 115.297 100.323C115.297 96.1883 113.835 92.6589 110.911 89.7352C110.857 89.6813 110.803 89.6278 110.748 89.5747C110.693 89.5216 110.638 89.4689 110.583 89.4167C110.531 89.3613 110.478 89.3063 110.425 89.2517C110.372 89.1971 110.319 89.1429 110.265 89.0891Z"
-              fill="#000" />
-          </svg>
-        </button>
-      </div>
-    </section>
-    <section class="feature">
-      <div class="feature-grid">
-        <div class="card">
-          <img src="/assets/rectangle_img.svg" alt="Feature 1" class="card-image" />
-          <div class="card-content">
-            <div class="card-title">HEADING</div>
-            <div class="card-desc">Description</div>
-          </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/assets/cute_banner (1).png" class="d-block w-100" alt="...">
         </div>
-        <div class="card">
-          <img src="/assets/rectangle_img.svg" alt="Feature 2" class="card-image" />
-          <div class="card-content">
-            <div class="card-title">HEADING</div>
-            <div class="card-desc">Description</div>
-          </div>
+        <div class="carousel-item">
+          <img src="/assets/cute_banner (2).png" class="d-block w-100" alt="...">
         </div>
-        <div class="card">
-          <img src="/assets/rectangle_img.svg" alt="Feature 3" class="card-image" />
-          <div class="card-content">
-            <div class="card-title">HEADING</div>
-            <div class="card-desc">Description</div>
-          </div>
+        <div class="carousel-item">
+          <img src="/assets/cute_banner (3).png" class="d-block w-100" alt="...">
         </div>
       </div>
-    </section>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container p-5" id="feature-section">
+      <div class="row gap-5">
+        
+        <div class="col" id="feature-col-1">
+          <div class="card" style="width: 18rem;">
+            <img src="/assets/rectangle_img.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">กีฬาสีสวนนัน 2568</h5>
+              <p class="card-text">กีฬากีฬาเป็นยาวิเศษ</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" id="feature-col-2">
+          <div class="card" style="width: 18rem;">
+            <img src="/assets/rectangle_img.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">กีฬาสีสวนนัน 2568</h5>
+              <p class="card-text">กีฬากีฬาเป็นยาวิเศษ</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" id="feature-col-3">
+          <div class="card" style="width: 18rem;">
+            <img src="/assets/rectangle_img.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">กีฬาสีสวนนัน 2568</h5>
+              <p class="card-text">กีฬากีฬาเป็นยาวิเศษ</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </main>
   <footer class="footer">
     <div>@2025 Pink Palace. ALL RIGHTS RESERVED.</div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
