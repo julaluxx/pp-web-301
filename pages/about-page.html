@@ -6,27 +6,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>วังชมพู | เกี่ยวกับ</title>
   <link rel="stylesheet" href="../style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
 </head>
 
 <body>
+
   <header class="header">
-    <a href="../home-page.html" class="logo">
-      <img src="/assets/pp-logo-bi.svg" alt="Website Logo" class="website-logo">
-      <span class="website-name">วังชมพู</span>
-    </a>
-    <nav class="navbar">
-      <a href="news-page.html" class="news-menu">News</a>
-      <a href="download-page.html" class="download-menu">Download</a>
-      <a href="about-page.html" class="about-menu active">About</a>
-      <a href="guide-page.html" class="guide-menu">Guide</a>
-      <a href="contact-page.html" class="contact-menu">Contact</a>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="../home-page.html">วังชมพู</a>
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="news-page.html">ข่าวสาร</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="download-page.html">ดาวน์โหลด</a>
+            </li>
+            <li>
+              <a class="nav-link active href="about-page.html">เกี่ยวกับ</a>
+            </li>
+            <li>
+              <a class="nav-link" href="guide-page.html">แนะนำ</a>
+            </li>
+            <li>
+              <a class="nav-link" href="contact-page.html">ติดต่อ</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">ค้นหา</button>
+          </form>
+
+        </div>
+
+      </div>
+
     </nav>
-    <div class="search-field">
-      <input type="text" placeholder="Search" class="search-input">
-      <button class="search-button">Search</button>
-    </div>
+
   </header>
 
   <div class="marquee">

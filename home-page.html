@@ -14,21 +14,46 @@
 
 <body>
   <header class="header">
-    <a href="./home-page.html" class="logo">
-      <img src="assets/pp-logo-bi.svg" alt="Website Logo" class="website-logo">
-      <span class="website-name active">วังชมพู</span>
-    </a>
-    <nav class="navbar">
-      <a href="pages/news-page.html" class="news-menu">News</a>
-      <a href="pages/download-page.html" class="download-menu">Download</a>
-      <a href="pages/download-page.html" class="about-menu">About</a>
-      <a href="pages/guide-page.html" class="guide-menu">Guide</a>
-      <a href="pages/contact-page.html" class="contact-menu">Contact</a>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">วังชมพู</a>
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/news-page.html">ข่าวสาร</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/download-page.html">ดาวน์โหลด</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/pages/about-page.html">เกี่ยวกับ</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/pages/guide-page.html">แนะนำ</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/pages/contact-page.html">ติดต่อ</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">ค้นหา</button>
+          </form>
+
+        </div>
+
+      </div>
+
     </nav>
-    <div class="search-field">
-      <input type="text" placeholder="Search" class="search-input">
-      <button class="search-button">Search</button>
-    </div>
+
   </header>
 
   <section class="marquee">
@@ -71,7 +96,7 @@
 
     <div class="container p-5" id="feature-section">
       <div class="row gap-5">
-        
+
         <div class="col" id="feature-col-1">
           <div class="card" style="width: 18rem;">
             <img src="/assets/rectangle_img.svg" class="card-img-top" alt="...">

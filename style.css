@@ -2,6 +2,11 @@
 @import url('css/footer.css');
 @import url('css/marquee.css');
 @import url('css/feature.css');
+@import url('css/custom.css');
+
+:root {
+    --pink-accent: #fcd5dc;
+}
 
 body {
     margin: 0;
