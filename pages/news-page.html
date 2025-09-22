@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>วังชมพู | ข่าวสาร</title>
     <link rel="stylesheet" href="../style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  </head>
+</head>
 
 <body>
     <header class="header">
@@ -22,7 +24,7 @@
             <a href="about-page.html" class="about-menu">About</a>
             <a href="guide-page.html" class="guide-menu">Guide</a>
             <a href="contact-page.html" class="contact-menu">Contact</a>
-          </nav>
+        </nav>
         <div class="search-field">
             <input type="text" placeholder="Search" class="search-input">
             <button class="search-button">Search</button>
@@ -33,46 +35,51 @@
         <p>ประกาศ</p>
     </div>
 
-    <main class="main-content">
+    <main>
+
         <div class="filter-container">
             <div class="filter-bar"></div>
         </div>
 
-        <div class="news-grid">
-            <div class="card">
-                <img src="assets/rectangle_img.svg" alt="News Image" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">HEADING</h2>
-                    <p class="card-desc">Description</p>
+        <div class="container p-5" id="news">
+
+            <div class="grid">
+                <div class="row gap-5">
+
+                    <div class="col" id="news-col-1">
+                        <div class="card">
+                            <img class="img-thumbnail" src="/assets/rectangle_img.svg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">test</h5>
+                                <p class="card-text">test test</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="news-col-2">
+                        <div class="card">
+                            <img class="img-thumbnail" src="/assets/rectangle_img.svg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">test</h5>
+                                <p class="card-text">test test</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="card">
-                <img src="assets/rectangle_img.svg" alt="News Image" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">HEADING</h2>
-                    <p class="card-desc">Description</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="assets/rectangle_img.svg" alt="News Image" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">HEADING</h2>
-                    <p class="card-desc">Description</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="assets/rectangle_img.svg" alt="News Image" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">HEADING</h2>
-                    <p class="card-desc">Description</p>
-                </div>
-            </div>
+
         </div>
+
     </main>
 
     <footer class="footer">
         <p>@2025 Pink Palace. ALL RIGHTS RESERVED.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
