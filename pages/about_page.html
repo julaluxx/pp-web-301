@@ -52,13 +52,6 @@
 
   <main>
 
-    <div class="container mx-auto my-8 breadcrumbs text-sm">
-      <ul>
-        <li><a>หน้าหลัก</a></li>
-        <li><a>เกี่ยวกับ</a></li>
-      </ul>
-    </div>
-
     <div class="container mx-auto my-8">
       <form id="filterForm">
         <input class="btn" type="checkbox" name="frameworks" value="pp-website" aria-label="วังชมพู" />
@@ -68,20 +61,15 @@
       </form>
     </div>
 
-    <div class="container mx-auto my-8">
-      <div class="flex w-full flex-col lg:flex-row">
-        <div class="card bg-base-300 rounded-box grid h-32 grow place-items-center">content
+    <div class="container mx-auto my-8" data-tags="pp-website">
+      <div class="carousel w-full">
 
-
-
-        </div>
-
-        <div class="divider lg:divider-horizontal"></div>
-
-        <div class="card bg-base-300 rounded-box grid h-32 grow place-items-center">content
-
-
-
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="/assets/cute_banner (2).png" class="w-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide4" class="btn btn-outline btn-secondary">&lt</a>
+            <a href="#slide2" class="btn btn-outline btn-secondary">&gt</a>
+          </div>
         </div>
       </div>
     </div>
@@ -113,7 +101,7 @@
 
   </footer>
 
-  <script src="../script.js"></script>
+  <script src="/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </body>
