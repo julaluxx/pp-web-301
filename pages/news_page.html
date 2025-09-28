@@ -53,12 +53,21 @@
   <main>
 
     <div class="container mx-auto my-8">
+      <form id="filterForm">
+        <input class="btn" type="checkbox" name="frameworks" value="academic" aria-label="วิชาการ" />
+        <input class="btn" type="checkbox" name="frameworks" value="currency" aria-label="การเงิน" />
+        <input class="btn" type="checkbox" name="frameworks" value="document" aria-label="งานทะเบียน" />
+        <input class="btn btn-square" type="reset" value=&#215; />
+      </form>
+    </div>
+
+    <div class="container mx-auto my-8">
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
-        <div class="card card-side bg-base-100 shadow-sm">
+        <div class="card card-side bg-base-100 shadow-sm" data-tags="">
           <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp" alt="Movie" />
+            <img src="/assets/rectangle_img.svg" alt="Movie" />
           </figure>
           <div class="card-body">
             <h2 class="card-title">New movie is released!</h2>
@@ -69,9 +78,9 @@
           </div>
         </div>
 
-        <div class="card card-side bg-base-100 shadow-sm">
+        <div class="card card-side bg-base-100 shadow-sm" data-tags="">
           <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp" alt="Movie" />
+            <img src="/assets/rectangle_img.svg" alt="Movie" />
           </figure>
           <div class="card-body">
             <h2 class="card-title">New movie is released!</h2>
@@ -82,9 +91,9 @@
           </div>
         </div>
 
-        <div class="card card-side bg-base-100 shadow-sm">
+        <div class="card card-side bg-base-100 shadow-sm" data-tags="">
           <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp" alt="Movie" />
+            <img src="/assets/rectangle_img.svg" alt="Movie" />
           </figure>
           <div class="card-body">
             <h2 class="card-title">New movie is released!</h2>
@@ -95,9 +104,9 @@
           </div>
         </div>
 
-        <div class="card card-side bg-base-100 shadow-sm">
+        <div class="card card-side bg-base-100 shadow-sm" data-tags="">
           <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp" alt="Movie" />
+            <img src="/assets/rectangle_img.svg" alt="Movie" />
           </figure>
           <div class="card-body">
             <h2 class="card-title">New movie is released!</h2>
@@ -138,6 +147,8 @@
     </nav>
 
   </footer>
+
+  <script src="/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </body>
