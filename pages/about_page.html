@@ -25,10 +25,10 @@
           </div>
           <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
             <li><a href="news_page.html">News</a></li>
-          <li><a href="download_page.html">Dowload</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="guide_page.html">Guide</a></li>
-          <li><a href="contact_page.html">Contact</a></li>
+            <li><a href="download_page.html">Dowload</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="guide_page.html">Guide</a></li>
+            <li><a href="contact_page.html">Contact</a></li>
           </ul>
         </div>
         <a class="btn btn-ghost text-xl" href="../index.html">PINK PALACE</a>
@@ -52,6 +52,39 @@
 
   <main>
 
+    <div class="container mx-auto my-8 breadcrumbs text-sm">
+      <ul>
+        <li><a>หน้าหลัก</a></li>
+        <li><a>เกี่ยวกับ</a></li>
+      </ul>
+    </div>
+
+    <div class="container mx-auto my-8">
+      <form id="filterForm">
+        <input class="btn" type="checkbox" name="frameworks" value="pp-website" aria-label="วังชมพู" />
+        <input class="btn" type="checkbox" name="frameworks" value="university" aria-label="มหาวิทยาลัย" />
+        <input class="btn" type="checkbox" name="frameworks" value="ssru-palace" aria-label="วังสวนสุนันทา" />
+        <input class="btn btn-square" type="reset" value=&#215; />
+      </form>
+    </div>
+
+    <div class="container mx-auto my-8">
+      <div class="flex w-full flex-col lg:flex-row">
+        <div class="card bg-base-300 rounded-box grid h-32 grow place-items-center">content
+
+
+
+        </div>
+
+        <div class="divider lg:divider-horizontal"></div>
+
+        <div class="card bg-base-300 rounded-box grid h-32 grow place-items-center">content
+
+
+
+        </div>
+      </div>
+    </div>
 
   </main>
 
@@ -68,7 +101,7 @@
           </path>
         </svg>
       </a>
-      
+
       <a href="">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
           <path
@@ -80,6 +113,7 @@
 
   </footer>
 
+  <script src="../script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </body>
