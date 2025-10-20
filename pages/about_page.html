@@ -11,9 +11,7 @@
 </head>
 
 <body>
-
   <header class="header">
-
     <div class="navbar bg-base-100 shadow-sm">
       <div class="navbar-start">
         <div class="dropdown">
@@ -35,7 +33,7 @@
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1 items-center">
-          <li><a href="news_page.html">ข่าวสาร</li></a>
+          <li><a href="news_page.html">ข่าวสาร</a></li>
           <li><a href="download_page.html">ดาวน์โหลด</a></li>
           <li><a class="btn btn-error text-xl" href="#">เกี่ยวกับ</a></li>
           <li><a href="guide_page.html">แนะนำ</a></li>
@@ -47,58 +45,86 @@
         <a class="btn btn-secondary">ค้นหา</a>
       </div>
     </div>
-
   </header>
 
   <main>
-
     <div class="container mx-auto my-8 p-4">
       <form id="filterForm">
         <input class="btn" type="checkbox" name="frameworks" value="pp-website" aria-label="วังชมพู" />
         <input class="btn" type="checkbox" name="frameworks" value="university" aria-label="มหาวิทยาลัย" />
         <input class="btn" type="checkbox" name="frameworks" value="ssru-palace" aria-label="วังสวนสุนันทา" />
-        <input class="btn btn-square" type="reset" value=&#215; />
+        <input class="btn btn-square" type="reset" value="&#215;" />
       </form>
     </div>
 
-    <div class="container mx-auto my-8" data-tags="pp-website">
-
-      <div class="card bg-base-100 image-full w-96 shadow-sm w-full" id="slide2">
-        <figure>
-          <img src="/assets/cute_banner (3).png" alt="" />
-        </figure>
-        <div class="card-body p-20">
-          <h2 class="card-title">วังชมพู</h2>
-          <p>เว็บไซต์นี้จัดทำขึ้นเพื่อเป็น เว็บบอร์ดข่าวสาร สำหรับนักศึกษา ศิษย์เก่า และบุคลากร
-            มหาวิทยาลัยราชภัฏสวนสุนันทา โดยมีวัตถุประสงค์ดังนี้:
-            <br>1. เป็นแหล่งรวบรวมและเผยแพร่ข้อมูลเกี่ยวกับมหาวิทยาลัยราชภัฏสวนสุนันทา
-            <br>2. เป็นพื้นที่สำหรับการแจ้งข่าวสารต่างๆ
+    <!-- 1 -->
+    <div class="hero min-h-screen" style="background-image: url(/assets/pink-baner.png);">
+      <div class="hero-overlay"></div>
+      <div class="hero-content text-neutral-content text-center">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">วังชมพู</h1>
+          <p class="mb-5">
+            เว็บไซต์วังชมพูจัดทำขึ้นเพื่อเป็นเว็บบอร์ดข่าวสารสำหรับนักศึกษา ศิษย์เก่า และบุคลากรของ
+            มหาวิทยาลัยราชภัฏสวนสุนันทา โดยมีวัตถุประสงค์ดังนี้:<br>
+            1. เป็นแหล่งรวบรวมและเผยแพร่ข้อมูลเกี่ยวกับมหาวิทยาลัยราชภัฏสวนสุนันทา<br>
+            2. เป็นพื้นที่สำหรับการแจ้งข่าวสารและเอกสารที่เกี่ยวข้องกับการศึกษาและกิจกรรมต่างๆ
           </p>
-          <div class="card-actions justify-end">
-            <!-- <button class="btn btn-primary">Read more</button> -->
-          </div>
         </div>
       </div>
+    </div>
 
+    <!-- 2 -->
+    <div class="hero min-h-screen" style="background-image: url(/assets/ssru.png);">
+      <div class="hero-overlay"></div>
+      <div class="hero-content text-neutral-content text-center">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">มหาวิทยาลัยราชภัฏสวนสุนันทา</h1>
+          <p class="mb-5">
+            มหาวิทยาลัยราชภัฏสวนสุนันทา (Suan Sunandha Rajabhat University; SSRU) ตั้งอยู่ในเขตดุสิต กรุงเทพมหานคร
+            ก่อตั้งเมื่อปี พ.ศ. 2480 ในชื่อโรงเรียนสวนสุนันทาวิทยาลัย และได้รับการยกฐานะเป็นมหาวิทยาลัยในปี
+            พ.ศ. 2547 ตามพระราชบัญญัติมหาวิทยาลัยราชภัฏ พ.ศ. 2547 คำขวัญของมหาวิทยาลัยคือ
+            “ผู้นำการสร้างมืออาชีพ” มุ่งเน้นการผลิตบัณฑิตที่มีคุณภาพ ด้วยองค์ความรู้ที่เป็นเลิศ
+            และส่งเสริมการเรียนรู้ในระดับสูงเพื่อรับผิดชอบต่ออนาคตของสังคมและโลก
+            ปัจจุบันเปิดสอนหลักสูตรปริญญาตรี โท และเอก ในหลากหลายคณะ เช่น คณะครุศาสตร์
+            คณะมนุษยศาสตร์และสังคมศาสตร์ และคณะวิทยาศาสตร์และเทคโนโลยี
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="hero min-h-screen" style="background-image: url(/assets/ssru-pl.png);">
+      <div class="hero-overlay"></div>
+      <div class="hero-content text-neutral-content text-center">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">วังสวนสุนันทา</h1>
+          <p class="mb-5">
+            วังสวนสุนันทาเป็นส่วนหนึ่งของพระราชวังดุสิต สร้างขึ้นในสมัยพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว
+            (รัชกาลที่ 5) เพื่อเป็นสถานที่พักผ่อนพระอิริยาบถ ชื่อ “สวนสุนันทา” มาจากพระนามของ
+            สมเด็จพระนางเจ้าสุนันทากุมารีรัตน์ และ “สุนันทาอุทยาน” ซึ่งหมายถึงสวนของพระอินทร์ในสวรรค์ชั้นดาวดึงส์
+            ในสมัยรัชกาลที่ 6 มีการก่อสร้างพระตำหนักและตึกเพิ่มเติม หลังการเปลี่ยนแปลงการปกครอง พ.ศ. 2475
+            พื้นที่นี้ถูกทอดทิ้ง จนในสมัยรัชกาลที่ 8 ได้มอบให้กระทรวงศึกษาธิการจัดตั้งสถานศึกษา
+            ซึ่งเป็นจุดเริ่มต้นของมหาวิทยาลัยราชภัฏสวนสุนันทาในปัจจุบัน
+          </p>
+        </div>
+      </div>
     </div>
 
   </main>
 
   <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4">
-
     <aside class="grid-flow-col items-center">
       <p>PINK PALACE ©2025 - All right reserved</p>
     </aside>
     <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-      <a href="">
+      <a href="https://www.youtube.com">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
           <path
             d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
           </path>
         </svg>
       </a>
-
-      <a href="">
+      <a href="https://www.facebook.com">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
           <path
             d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
@@ -106,12 +132,10 @@
         </svg>
       </a>
     </nav>
-
   </footer>
 
   <script src="/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
 </body>
 
 </html>
