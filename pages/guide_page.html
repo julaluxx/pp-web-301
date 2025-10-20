@@ -31,7 +31,7 @@
             <li><a href="contact_page.html">ติดต่อ</a></li>
           </ul>
         </div>
-        <a class="btn btn-ghost text-xl" href="../index.html">PINK PALACE --แนะนำ</a>
+        <a class="btn btn-ghost text-xl" href="../index.html">PINK PALACE -- แนะนำ</a>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
@@ -62,71 +62,144 @@
     </div>
 
     <div class="container mx-auto my-10 px-4">
-
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
+        <!-- กระทู้ 1 -->
         <div class="card card-side bg-base-100 shadow-sm" data-tags="accommodate">
           <figure>
-            <img src="/assets/rectangle_img.svg" alt="Movie" />
           </figure>
           <div class="card-body">
             <h2 class="card-title">คู่มือนักศึกษา ปี 2568</h2>
-            <p>รายละเอียดคร่าวๆ</p>
+            <p>แนะนำขั้นตอนสำคัญสำหรับนักศึกษาใหม่</p>
             <div class="card-actions justify-end">
-              <button class="btn btn-secondary">อ่านต่อ...</button>
+              <button class="btn btn-secondary" onclick="modal1.showModal()">อ่านต่อ...</button>
+              <dialog id="modal1" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                  <h3 class="text-lg font-bold">คู่มือนักศึกษา ปี 2568</h3>
+                  <p class="py-4">
+                    เอกสารคู่มือนี้ครอบคลุมข้อมูลสำคัญสำหรับนักศึกษาใหม่ เช่น การลงทะเบียนเรียน การใช้งานหอสมุด
+                    กิจกรรมต่าง ๆ ของมหาวิทยาลัย
+                    <br><br>
+                    🔹 ขั้นตอนการลงทะเบียน
+                    🔹 การรับบัตรนักศึกษา
+                    🔹 ข้อมูลหอพักและอาหาร
+                    🔹 การเข้าร่วมกิจกรรมชมรมและสโมสรนักศึกษา
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">ปิด</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
         </div>
 
-        <div class="card card-side bg-base-100 shadow-sm" data-tags="">
+        <!-- กระทู้ 2 -->
+        <div class="card card-side bg-base-100 shadow-sm">
           <figure>
-            <img src="/assets/rectangle_img.svg" alt="Movie" />
           </figure>
           <div class="card-body">
             <h2 class="card-title">คู่มือลงทะเบียนเรียน</h2>
-            <p>รายละเอียดคร่าวๆ</p>
+            <p>วิธีการลงทะเบียนเรียนและเลือกวิชา</p>
             <div class="card-actions justify-end">
-              <button class="btn btn-secondary">Watch</button>
+              <button class="btn btn-secondary" onclick="modal2.showModal()">อ่านต่อ...</button>
+              <dialog id="modal2" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                  <h3 class="text-lg font-bold">คู่มือลงทะเบียนเรียน</h3>
+                  <p class="py-4">
+                    คู่มือนี้อธิบายขั้นตอนการลงทะเบียนเรียนทุกระดับชั้น รวมถึงการตรวจสอบวิชาที่เรียน
+                    การชำระเงินค่าลงทะเบียน และแนวทางแก้ไขปัญหา
+                    <br><br>
+                    🔹 การเลือกวิชาและเวลาเรียน
+                    🔹 การชำระเงินค่าลงทะเบียน
+                    🔹 วิธีการแก้ไขข้อผิดพลาดการลงทะเบียน
+                    🔹 ข้อมูลติดต่อฝ่ายทะเบียน
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">ปิด</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
         </div>
 
-        <div class="card card-side bg-base-100 shadow-sm" data-tags="">
+        <!-- กระทู้ 3 -->
+        <div class="card card-side bg-base-100 shadow-sm">
           <figure>
-            <img src="/assets/rectangle_img.svg" alt="Movie" />
           </figure>
           <div class="card-body">
             <h2 class="card-title">แนะนำอาหารในรั้วสวนนันที่เด็ดๆ</h2>
-            <p>รายละเอียดคร่าวๆ</p>
+            <p>รวมร้านอาหารและขนมอร่อยในมหาวิทยาลัย</p>
             <div class="card-actions justify-end">
-              <button class="btn btn-secondary">Watch</button>
+              <button class="btn btn-secondary" onclick="modal3.showModal()">อ่านต่อ...</button>
+              <dialog id="modal3" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                  <h3 class="text-lg font-bold">แนะนำอาหารในรั้วสวนนันที่เด็ดๆ</h3>
+                  <p class="py-4">
+                    สำรวจร้านอาหารและคาเฟ่ในมหาวิทยาลัย สวนนัน ที่นักศึกษาและอาจารย์นิยม
+                    <br><br>
+                    🔹 ร้านข้าวแกงคุณภาพ
+                    🔹 คาเฟ่กาแฟและเบเกอรี่
+                    🔹 อาหารว่างและเครื่องดื่ม
+                    🔹 เมนูแนะนำเฉพาะสัปดาห์
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">ปิด</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
         </div>
 
-        <div class="card card-side bg-base-100 shadow-sm" data-tags="">
+        <!-- กระทู้ 4 -->
+        <div class="card card-side bg-base-100 shadow-sm">
           <figure>
-            <img src="/assets/rectangle_img.svg" alt="Movie" />
           </figure>
           <div class="card-body">
             <h2 class="card-title">เทคนิคการจดโน้ต จากรุ่นพี่นิติศาสตร์</h2>
-            <p>รายละเอียดคร่าวๆ</p>
+            <p>เคล็ดลับการจดโน้ตให้จำง่ายและมีประสิทธิภาพ</p>
             <div class="card-actions justify-end">
-              <button class="btn btn-secondary">Watch</button>
+              <button class="btn btn-secondary" onclick="modal4.showModal()">อ่านต่อ...</button>
+              <dialog id="modal4" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                  <h3 class="text-lg font-bold">เทคนิคการจดโน้ต จากรุ่นพี่นิติศาสตร์</h3>
+                  <p class="py-4">
+                    รุ่นพี่นิติศาสตร์แนะนำเทคนิคการจดโน้ตทั้งวิธีการเขียนสรุปอย่างรวดเร็วและการใช้สีเน้นหัวข้อสำคัญ
+                    <br><br>
+                    🔹 การจัดระเบียบหัวข้อ
+                    🔹 ใช้สัญลักษณ์ช่วยจำ
+                    🔹 การทำ Mindmap สำหรับบทเรียนยาว
+                    🔹 เทคนิคทบทวนบทเรียนก่อนสอบ
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">ปิด</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
         </div>
 
       </div>
-
     </div>
+
 
   </main>
 
   <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4">
 
     <aside class="grid-flow-col items-center">
-      <p>PINK PALACE --©2025 - All right reserved</p>
+      <p>PINK PALACE -- ©2025 - All right reserved</p>
     </aside>
     <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
       <a href="">
