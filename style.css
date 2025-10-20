@@ -5,13 +5,22 @@
     --pink-accent: #e0556e;
 }
 
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f9f5f5;
+html, body {
+  height: 100%;
 }
 
-.main {
-    width: 100%;
-    padding: 0;
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f5f5;
 }
+
+main {
+  flex: 1;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 80px; 
+}
+
