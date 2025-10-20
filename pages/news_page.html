@@ -63,51 +63,96 @@
     </div>
 
     <div class="container mx-auto my-10 px-4">
-
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
+        <!-- ข่าว 1 -->
         <div class="card card-side bg-base-100 shadow-sm" data-tags="life">
           <figure>
-            <img class="img-tn" src="/assets/image-4.png" alt=""/>
+            <img class="img-tn" src="/assets/image-4.png" alt="" />
           </figure>
           <div class="card-body">
             <h2 class="card-title">ถนนทรุดหน้าโรงบาล ใกล้สวนนัน</h2>
             <div class="badge badge-dash badge-primary">ความเป็นอยู่</div>
-            <p>รายละเอียดคร่าวๆ ของเนื้อหาข่าว</p>
+            <p>ฝนตกต่อเนื่องทำให้ถนนหน้าโรงพยาบาลทรุดตัว เจ้าหน้าที่ลงพื้นที่ตรวจสอบและซ่อมแซมแล้ว</p>
             <div class="card-actions justify-end">
-              <button class="btn btn-secondary">อ่านต่อ</button>
+              <button class="btn btn-secondary" onclick="modal1.showModal()">อ่านต่อ</button>
+              <dialog id="modal1" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                  <h3 class="text-lg font-bold">ถนนทรุดหน้าโรงบาล ใกล้สวนนัน</h3>
+                  <img src="/assets/image-4.png" alt="">
+                  <p class="py-4">
+                    ฝนตกต่อเนื่องทำให้ถนนหน้าโรงพยาบาลทรุดตัว เจ้าหน้าที่ลงพื้นที่ตรวจสอบและซ่อมแซมแล้ว
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">ปิด</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
         </div>
 
+        <!-- ข่าว 2 -->
         <div class="card card-side bg-base-100 shadow-sm" data-tags="document">
           <figure>
-            <img class="img-tn"  src="/assets/002 portfolio 02 post eng.svg" alt=""/>
+            <img class="img-tn" src="/assets/002 portfolio 02 post eng.svg" alt="" />
           </figure>
           <div class="card-body">
             <h2 class="card-title">รับสมัครนักศึกษาใหม่ ปีการศึกษา 2569</h2>
             <div class="badge badge-dash badge-primary">งานทะเบียน</div>
-            <p>รายละเอียดคร่าวๆ ของเนื้อหาข่าว</p>
+            <p>มหาวิทยาลัยเปิดรับสมัครนักศึกษาใหม่ในหลายคณะ สามารถสมัครออนไลน์ได้ตั้งแต่วันนี้ถึง 15 ตุลาคม 2568</p>
             <div class="card-actions justify-end">
-              <button class="btn btn-secondary">อ่านต่อ</button>
+              <button class="btn btn-secondary" onclick="modal2.showModal()">อ่านต่อ</button>
+              <dialog id="modal2" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                  <h3 class="text-lg font-bold">รับสมัครนักศึกษาใหม่ ปีการศึกษา 2569</h3>
+                  <img src="/assets/002 portfolio 02 post eng.svg" alt="">
+                  <p class="py-4">
+                    มหาวิทยาลัยเปิดรับสมัครนักศึกษาใหม่ในหลายคณะ สามารถสมัครออนไลน์ได้ตั้งแต่วันนี้ถึง 15 ตุลาคม 2568
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">ปิด</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
         </div>
 
+        <!-- ข่าว 3 -->
         <div class="card card-side bg-base-100 shadow-sm" data-tags="academic">
           <figure>
             <img class="img-tn" src="/assets/image-5.png" alt="" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">เปิดยื่นคำร้องขอทุนการศึกแล้ว!</h2>
+            <h2 class="card-title">เปิดยื่นคำร้องขอทุนการศึกษาแล้ว!</h2>
             <div class="badge badge-dash badge-primary">การเงิน</div>
-            <p>รายละเอียดคร่าวๆ ของเนื้อหาข่าว</p>
+            <p>นักศึกษาที่มีผลการเรียนดีแต่ขาดแคลนทุนทรัพย์สามารถยื่นคำร้องขอทุนได้ตั้งแต่วันนี้ถึง 31 มีนาคม 2569</p>
             <div class="card-actions justify-end">
-              <button class="btn btn-secondary">อ่านต่อ</button>
+              <button class="btn btn-secondary" onclick="modal3.showModal()">อ่านต่อ</button>
+              <dialog id="modal3" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                  <h3 class="text-lg font-bold">เปิดยื่นคำร้องขอทุนการศึกษาแล้ว!</h3>
+                  <img src="/assets/image-5.png" alt="">
+                  <p class="py-4">
+                    นักศึกษาที่มีผลการเรียนดีแต่ขาดแคลนทุนทรัพย์สามารถยื่นคำร้องขอทุนได้ตั้งแต่วันนี้ถึง 31 มีนาคม 2569
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">ปิด</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
         </div>
 
+        <!-- ข่าว 4 -->
         <div class="card card-side bg-base-100 shadow-sm" data-tags="life">
           <figure>
             <img class="img-tn" src="/assets/image-6.png" alt="" />
@@ -115,16 +160,30 @@
           <div class="card-body">
             <h2 class="card-title">ขอแสดงความเสียใจกับนักศึกษาที่ประสบอุทกภัย</h2>
             <div class="badge badge-dash badge-primary">ความเป็นอยู่</div>
-            <p>รายละเอียดคร่าวๆ ของเนื้อหาข่าว</p>
+            <p>สถาบันขอส่งกำลังใจให้นักศึกษาที่ได้รับผลกระทบจากอุทกภัย พร้อมเปิดช่องทางช่วยเหลือฉุกเฉิน</p>
             <div class="card-actions justify-end">
-              <button class="btn btn-secondary">อ่านต่อ</button>
+              <button class="btn btn-secondary" onclick="modal4.showModal()">อ่านต่อ</button>
+              <dialog id="modal4" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                  <h3 class="text-lg font-bold">ขอแสดงความเสียใจกับนักศึกษาที่ประสบอุทกภัย</h3>
+                  <img src="/assets/image-6.png" alt="">
+                  <p class="py-4">
+                    สถาบันขอส่งกำลังใจให้นักศึกษาที่ได้รับผลกระทบจากอุทกภัย พร้อมเปิดช่องทางช่วยเหลือฉุกเฉิน
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">ปิด</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
         </div>
 
       </div>
-
     </div>
+
 
   </main>
 
