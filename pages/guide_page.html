@@ -11,9 +11,7 @@
 </head>
 
 <body>
-
   <header class="header">
-
     <div class="navbar bg-base-100 shadow-sm">
       <div class="navbar-start">
         <div class="dropdown">
@@ -24,18 +22,18 @@
             </svg>
           </div>
           <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-            <li><a href="news_page.html">ข่าวสาร</li></a>
+            <li><a href="news_page.html">ข่าวสาร</a></li>
             <li><a href="download_page.html">ดาวน์โหลด</a></li>
             <li><a href="about_page.html">เกี่ยวกับ</a></li>
             <li><a class="btn btn-error text-xl" href="#">แนะนำ</a></li>
             <li><a href="contact_page.html">ติดต่อ</a></li>
           </ul>
         </div>
-        <a class="btn btn-ghost text-xl" href="../index.html">PINK PALACE</a>
+        <a class="btn btn-ghost text-xl" href="/index.html">PINK PALACE</a>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1 items-center">
-          <li><a href="news_page.html">ข่าวสาร</li></a>
+          <li><a href="news_page.html">ข่าวสาร</a></li>
           <li><a href="download_page.html">ดาวน์โหลด</a></li>
           <li><a href="about_page.html">เกี่ยวกับ</a></li>
           <li><a class="btn btn-error text-xl" href="#">แนะนำ</a></li>
@@ -47,25 +45,22 @@
         <a class="btn btn-secondary">ค้นหา</a>
       </div>
     </div>
-
   </header>
 
   <main>
-
     <div class="container mx-auto my-8">
       <form id="filterForm">
         <input class="btn" type="checkbox" name="frameworks" value="academic" aria-label="วิชาการ" />
         <input class="btn" type="checkbox" name="frameworks" value="currency" aria-label="การเงิน" />
         <input class="btn" type="checkbox" name="frameworks" value="accommodate" aria-label="หอพัก" />
-        <input class="btn btn-square" type="reset" value=&#215; />
+        <input class="btn btn-square" type="reset" value="&#215;" />
       </form>
     </div>
 
     <div class="container mx-auto my-10 px-4">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-
         <!-- กระทู้ 1 -->
-        <div class="card card-side bg-base-100 shadow-sm" data-tags="accommodate">
+        <div id="guide-modal1" class="card card-side bg-base-100 shadow-sm" data-tags="accommodate">
           <div class="card-body">
             <h2 class="card-title">คู่มือนักศึกษา ปี 2568</h2>
             <p>เริ่มต้นชีวิตนักศึกษาอย่างมั่นใจด้วยคู่มือฉบับสมบูรณ์!</p>
@@ -80,16 +75,10 @@
                   </p>
                   <p class="py-2 font-semibold">📝 ขั้นตอนสำคัญสำหรับนักศึกษาใหม่:</p>
                   <ul class="list-disc list-inside ml-4">
-                    <li><a href="#" class="text-blue-500 underline"
-                        onclick="modal1.close(); modal2.showModal()">ลงทะเบียนเรียนและตรวจสอบตารางเรียน</a></li>
-                    <li><a href="#" class="text-blue-500 underline"
-                        onclick="modal1.close(); modal3.showModal()">ขอรับบัตรนักศึกษาและเอกสารประจำตัว</a></li>
-                    <li><a href="#" class="text-blue-500 underline"
-                        onclick="modal1.close(); modal4.showModal()">ทำความรู้จักกับระบบหอพักและสิ่งอำนวยความสะดวกต่าง
-                        ๆ</a></li>
-                    <li><a href="#" class="text-blue-500 underline"
-                        onclick="modal1.close(); modal5.showModal()">เข้าร่วมกิจกรรมชมรมและสโมสรนักศึกษาเพื่อสร้างเครือข่าย</a>
-                    </li>
+                    <li>ลงทะเบียนนักศึกษาใหม่</li>
+                    <li>ชำระค่าเทอมและค่าธรรมเนียม</li>
+                    <li>เข้าร่วมปฐมนิเทศ</li>
+                    <li>สมัครหอพัก (ถ้ามี)</li>
                   </ul>
                   <div class="modal-action">
                     <form method="dialog">
@@ -103,70 +92,10 @@
         </div>
 
         <!-- กระทู้ 2 -->
-        <div class="card card-side bg-base-100 shadow-sm" data-tags="academic">
-          <div class="card-body">
-            <h2 class="card-title">ลงทะเบียนเรียนและตรวจสอบตารางเรียน</h2>
-            <p>ขั้นตอนสำคัญก่อนเริ่มเรียนภาคการศึกษาใหม่</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-secondary" onclick="modal2.showModal()">อ่านต่อ...</button>
-              <dialog id="modal2" class="modal modal-bottom sm:modal-middle">
-                <div class="modal-box">
-                  <h3 class="text-lg font-bold">ลงทะเบียนเรียนและตรวจสอบตารางเรียน</h3>
-                  <p class="py-4">
-                    เพื่อให้การเรียนของคุณราบรื่น ควรเริ่มจากการตรวจสอบตารางเรียนและลงทะเบียนเรียนตามขั้นตอน
-                  </p>
-                  <ul class="list-disc list-inside ml-4">
-                    <li>เข้าสู่ระบบนักศึกษาและตรวจสอบรหัสวิชา</li>
-                    <li>เลือกวิชาที่ต้องการเรียนตามแผนการศึกษา</li>
-                    <li>ตรวจสอบความขัดแย้งของตารางเรียน</li>
-                    <li>ยืนยันการลงทะเบียนและบันทึกข้อมูล</li>
-                  </ul>
-                  <div class="modal-action">
-                    <form method="dialog">
-                      <button class="btn">ปิด</button>
-                    </form>
-                  </div>
-                </div>
-              </dialog>
-            </div>
-          </div>
-        </div>
-
-        <!-- กระทู้ 3 -->
-        <div class="card card-side bg-base-100 shadow-sm" data-tags="document">
-          <div class="card-body">
-            <h2 class="card-title">ขอรับบัตรนักศึกษาและเอกสารประจำตัว</h2>
-            <p>วิธีการขอเอกสารสำคัญเพื่อยืนยันตัวตน</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-secondary" onclick="modal3.showModal()">อ่านต่อ...</button>
-              <dialog id="modal3" class="modal modal-bottom sm:modal-middle">
-                <div class="modal-box">
-                  <h3 class="text-lg font-bold">ขอรับบัตรนักศึกษาและเอกสารประจำตัว</h3>
-                  <p class="py-4">
-                    หลังจากลงทะเบียนเรียบร้อยแล้ว สิ่งสำคัญคือการรับบัตรนักศึกษาและเอกสารประจำตัวต่าง ๆ
-                  </p>
-                  <ul class="list-disc list-inside ml-4">
-                    <li>เตรียมเอกสารส่วนตัว เช่น บัตรประชาชน และรูปถ่าย</li>
-                    <li>ไปยังสำนักงานทะเบียนนักศึกษา</li>
-                    <li>กรอกฟอร์มการขอบัตรนักศึกษา</li>
-                    <li>รับบัตรนักศึกษาและเอกสารประจำตัวพร้อมคำแนะนำ</li>
-                  </ul>
-                  <div class="modal-action">
-                    <form method="dialog">
-                      <button class="btn">ปิด</button>
-                    </form>
-                  </div>
-                </div>
-              </dialog>
-            </div>
-          </div>
-        </div>
-
-        <!-- กระทู้ 4 -->
-        <div class="card card-side bg-base-100 shadow-sm" data-tags="accommodate">
+        <div id="guide-modal4" class="card card-side bg-base-100 shadow-sm" data-tags="accommodate">
           <div class="card-body">
             <h2 class="card-title">ทำความรู้จักกับระบบหอพักและสิ่งอำนวยความสะดวกต่าง ๆ</h2>
-            <p>ข้อมูลสำคัญสำหรับนักศึกษาที่อาศัยหอพัก</p>
+            <p>เพื่อความสะดวกในการพักอาศัย นักศึกษาควรทราบระบบหอพักและสิ่งอำนวยความสะดวกต่าง ๆ</p>
             <div class="card-actions justify-end">
               <button class="btn btn-secondary" onclick="modal4.showModal()">อ่านต่อ...</button>
               <dialog id="modal4" class="modal modal-bottom sm:modal-middle">
@@ -192,8 +121,8 @@
           </div>
         </div>
 
-        <!-- กระทู้ 5 -->
-        <div class="card card-side bg-base-100 shadow-sm" data-tags="life">
+        <!-- กระทู้ 3 -->
+        <div id="guide-modal5" class="card card-side bg-base-100 shadow-sm" data-tags="life">
           <div class="card-body">
             <h2 class="card-title">เข้าร่วมกิจกรรมชมรมและสโมสรนักศึกษาเพื่อสร้างเครือข่าย</h2>
             <p>เพิ่มเพื่อนและประสบการณ์ด้วยกิจกรรมเสริม</p>
@@ -221,29 +150,23 @@
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
-
-
   </main>
 
   <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4">
-
     <aside class="grid-flow-col items-center">
       <p>PINK PALACE ©2025 - All right reserved</p>
     </aside>
     <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-      <a href="">
+      <a href="https://www.youtube.com">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
           <path
             d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
           </path>
         </svg>
       </a>
-
-      <a href="">
+      <a href="https://www.facebook.com">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
           <path
             d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
@@ -251,12 +174,10 @@
         </svg>
       </a>
     </nav>
-
   </footer>
 
   <script src="/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
 </body>
 
 </html>

@@ -11,9 +11,7 @@
 </head>
 
 <body>
-
   <header class="header">
-
     <div class="navbar bg-base-100 shadow-sm">
       <div class="navbar-start">
         <div class="dropdown">
@@ -31,7 +29,7 @@
             <li><a class="btn btn-error text-xl" href="#">ติดต่อ</a></li>
           </ul>
         </div>
-        <a class="btn btn-ghost text-xl" href="../index.html">PINK PALACE</a>
+        <a class="btn btn-ghost text-xl" href="/index.html">PINK PALACE</a>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1 items-center">
@@ -47,46 +45,42 @@
         <a class="btn btn-secondary">ค้นหา</a>
       </div>
     </div>
-
   </header>
 
   <main>
-
     <div class="container mx-auto my-8 p-4">
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-
-        <button class="btn btn-soft btn-info btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"><a href=""
-            target="_blank">กองพัฒนานักศึกษา </a></button>
-        <button class="btn btn-soft btn-info btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"><a href=""
-            target="_blank">ฝ่ายทะเบียนและประเมินผล </a></button>
-        <button class="btn btn-soft btn-info btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"><a
-            href="https://www.facebook.com/foodandbeveragessru/?locale=th_TH"
-            target="_blank">ฝ่ายผลิตอาหารและเครื่องดื่ม </a></button>
-        <button class="btn btn-soft btn-info btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"><a href=""
-            target="_blank">ฝ่ายกิจการนักศึกษา </a></button>
-
+      <div id="contact-buttons" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <button id="contact-student_dev" class="btn btn-soft btn-info btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">
+          <a href="" target="_blank">กองพัฒนานักศึกษา</a>
+        </button>
+        <button id="contact-registry" class="btn btn-soft btn-info btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">
+          <a href="" target="_blank">ฝ่ายทะเบียนและประเมินผล</a>
+        </button>
+        <button id="contact-food_beverage" class="btn btn-soft btn-info btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">
+          <a href="https://www.facebook.com/foodandbeveragessru/?locale=th_TH"
+            target="_blank">ฝ่ายผลิตอาหารและเครื่องดื่ม</a>
+        </button>
+        <button id="contact-student_affairs"
+          class="btn btn-soft btn-info btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">
+          <a href="" target="_blank">ฝ่ายกิจการนักศึกษา</a>
+        </button>
       </div>
-
     </div>
-
   </main>
 
   <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4">
-
     <aside class="grid-flow-col items-center">
       <p>PINK PALACE ©2025 - All right reserved</p>
     </aside>
     <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-      <a href="">
+      <a href="https://www.youtube.com">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
           <path
             d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
           </path>
         </svg>
       </a>
-
-      <a href="">
+      <a href="https://www.facebook.com">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
           <path
             d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
@@ -94,12 +88,10 @@
         </svg>
       </a>
     </nav>
-
   </footer>
 
-  <script src="/script.js"></script>
+  <script src="../script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
 </body>
 
 </html>
